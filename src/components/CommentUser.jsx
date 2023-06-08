@@ -30,7 +30,7 @@ const Comment = styled.p`
   color: #333333;
 `;
 
-const Comment2 = (props) => {
+const CommentUser = ({ commentData }) => {
   return (
     <UserTop>
       <h3 className="a11y-hidden">작성자 정보</h3>
@@ -45,10 +45,10 @@ const Comment2 = (props) => {
             <img src={moreVertical} alt="코멘트 설정 더보기"></img>
           </button>
         </NameTop>
-        <Comment>게시글 답글 ~~ !! 최고최고</Comment>
+        <Comment>{commentData && commentData.content}</Comment>
       </div>
     </UserTop>
   );
 };
 
-export default Comment2;
+export default CommentUser;

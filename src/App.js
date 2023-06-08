@@ -64,7 +64,7 @@ span{
   color: #767676;
 }
 
-html {
+body {
   width: 399px;
   display: flex;
   align-items: center;
