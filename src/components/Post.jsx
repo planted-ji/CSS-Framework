@@ -46,8 +46,10 @@ const Post = () => {
   return (
     <article>
       <div className="line" />
+      <h1 className="a11y-hidden">게시글</h1>
       <Div>
         <PostTop>
+          <h2 className="a11y-hidden">작성자 정보</h2>
           <a href="#none">
             <img src={profileImg} alt="프로필 사진"></img>
           </a>
@@ -60,6 +62,7 @@ const Post = () => {
           </button>
         </PostTop>
         <PostBottom>
+          <h2 className="a11y-hidden">게시글 본문</h2>
           <P>
             옷을 인생을 그러므로 없으면 것은 이상은 것은 우리의 위하여, 뿐이다.
             이상의 청춘의 뼈 따뜻한 그들의 그와 약동하다. 대고, 못할 넣는

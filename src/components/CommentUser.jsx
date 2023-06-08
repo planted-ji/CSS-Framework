@@ -33,6 +33,7 @@ const Comment = styled.p`
 const Comment2 = () => {
   return (
     <UserTop>
+      <h3 className="a11y-hidden">작성자 정보</h3>
       <a href="#none">
         <img src={profile1} alt="프로필 사진"></img>
       </a>
