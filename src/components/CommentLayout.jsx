@@ -15,6 +15,7 @@ const Line = styled.div`
 
 const Input = styled.input`
   width: 254px;
+
   border: 0;
   margin: 0 16px 0 16px;
   ::placeholder {

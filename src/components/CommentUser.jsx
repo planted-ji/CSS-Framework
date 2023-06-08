@@ -30,7 +30,7 @@ const Comment = styled.p`
   color: #333333;
 `;
 
-const Comment2 = () => {
+const Comment2 = (props) => {
   return (
     <UserTop>
       <h3 className="a11y-hidden">작성자 정보</h3>

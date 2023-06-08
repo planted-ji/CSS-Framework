@@ -63,6 +63,14 @@ span{
   font-size: 12px;
   color: #767676;
 }
+
+html {
+  width: 399px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
 `;
 
 function App() {
