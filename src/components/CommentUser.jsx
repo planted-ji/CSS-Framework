@@ -42,7 +42,9 @@ const CommentUser = (props) => {
             <img src={moreVertical} alt="코멘트 설정 더보기"></img>
           </button>
         </div>
-        <div>{props.comment}</div>
+        <div>
+          <p>{props.comment && props.comment.content}</p>
+        </div>
       </div>
     </div>
   );
