@@ -2,9 +2,11 @@ import TopMenu from "./components/TopMenu";
 import Post from "./components/Post";
 import Comment from "./components/CommentLayout";
 import { createGlobalStyle } from "styled-components";
-import "normalize.css";
+import normalize from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
+${normalize}
+
 @font-face {
     font-family: 'SpoqaHanSansNeo-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');

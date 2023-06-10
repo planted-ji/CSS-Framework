@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import profile1 from "../images/profile1.svg";
 import moreVertical from "../images/morevertical.svg";
 import styled from "styled-components";
@@ -30,24 +30,21 @@ const Comment = styled.p`
   color: #333333;
 `;
 
-const CommentUser = ({ commentData }) => {
+const CommentUser = (props) => {
   return (
-    <UserTop>
-      <h3 className="a11y-hidden">작성자 정보</h3>
-      <a href="#none">
-        <img src={profile1} alt="프로필 사진"></img>
-      </a>
+    <div>
+      <img src={props.img}></img>
       <div className="user">
-        <NameTop>
-          <Strong>서귀포시 무슨 농장</Strong>
-          <Span>· 5분 전</Span>
+        <div>
+          <strong>{props.name}</strong>
+          <span>· {props.time}</span>
           <button>
             <img src={moreVertical} alt="코멘트 설정 더보기"></img>
           </button>
-        </NameTop>
-        <Comment>{commentData && commentData.content}</Comment>
+        </div>
+        <div>{props.comment}</div>
       </div>
-    </UserTop>
+    </div>
   );
 };
 
